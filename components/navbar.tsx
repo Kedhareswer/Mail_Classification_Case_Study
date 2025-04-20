@@ -41,7 +41,7 @@ export default function Navbar() {
           </nav>
 
           <div className="hidden md:flex items-center space-x-4">
-            <Link href="https://github.com/example/email-insight" target="_blank" rel="noopener noreferrer">
+            <Link href="https://github.com/Kedhareswer/Mail_Classification_Case_Study" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon">
                 <Github className="h-5 w-5" />
                 <span className="sr-only">GitHub</span>
