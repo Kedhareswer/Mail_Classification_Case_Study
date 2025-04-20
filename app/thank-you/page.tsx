@@ -34,42 +34,33 @@ export default function AboutPage() {
               <div className="md:w-1/3 bg-slate-100">
                 <div className="h-full flex items-center justify-center p-8">
                   <div className="w-48 h-48 rounded-full bg-emerald-600 flex items-center justify-center text-white text-4xl font-bold">
-                    AJ
+                    <img src="/kedhareswer.jpeg" alt="Profile" className="w-full h-full rounded-full object-cover" />
                   </div>
                 </div>
               </div>
 
               <div className="md:w-2/3 p-8">
-                <h3 className="text-2xl font-bold mb-2">Alex Johnson</h3>
-                <p className="text-emerald-600 font-medium mb-4">Data Scientist & ML Engineer</p>
+                <h3 className="text-2xl font-bold mb-2">Kedhareswer Naidu</h3>
+                <p className="text-emerald-600 font-medium mb-4">Data Science Student (AI & ML)</p>
 
                 <p className="text-slate-600 mb-6">
-                  I'm a data scientist with a passion for natural language processing and machine learning. With a
-                  background in computer science and 5+ years of experience in the field, I've worked on various text
-                  classification projects, but always felt that most approaches focus too much on the end result and not
-                  enough on understanding the process.
+                  Hey there! I'm a data science enthusiast who loves turning complex AI concepts into practical solutions. When I'm not buried in datasets, you'll find me exploring how machine learning can make our digital lives safer and more efficient - like helping filter out those pesky spam emails!
                 </p>
 
                 <p className="text-slate-600 mb-6">
-                  This project represents my attempt to create a more transparent and educational approach to email
-                  classification. Instead of just building another spam filter, I wanted to develop a methodology that
-                  helps users understand why certain emails are classified as spam or ham.
+                  This project represents my attempt to create a more transparent and educational approach to email classification, combining my academic knowledge with practical implementation.
                 </p>
 
                 <div className="flex space-x-4">
-                  <Link href="https://twitter.com/example" className="text-slate-600 hover:text-emerald-600">
-                    <Twitter className="h-5 w-5" />
-                    <span className="sr-only">Twitter</span>
-                  </Link>
-                  <Link href="https://linkedin.com/in/example" className="text-slate-600 hover:text-emerald-600">
+                  <Link href="www.linkedin.com/in/kedhareswernaidu" className="text-slate-600 hover:text-emerald-600">
                     <Linkedin className="h-5 w-5" />
                     <span className="sr-only">LinkedIn</span>
                   </Link>
-                  <Link href="https://github.com/example" className="text-slate-600 hover:text-emerald-600">
+                  <Link href="https://github.com/Kedhareswer/Mail_Classification_Case_Study" className="text-slate-600 hover:text-emerald-600">
                     <Github className="h-5 w-5" />
                     <span className="sr-only">GitHub</span>
                   </Link>
-                  <Link href="mailto:alex@example.com" className="text-slate-600 hover:text-emerald-600">
+                  <Link href="mailto:kedhareswer.12110626@gmail.com" className="text-slate-600 hover:text-emerald-600">
                     <Mail className="h-5 w-5" />
                     <span className="sr-only">Email</span>
                   </Link>
@@ -78,46 +69,7 @@ export default function AboutPage() {
             </div>
           </Card>
         </section>
-
-        {/* Project Materials Section */}
-        <section className="bg-slate-100 p-8 rounded-lg">
-          <h2 className="text-2xl font-bold mb-6">Project Resources</h2>
-
-          <div className="grid md:grid-cols-2 gap-6">
-            <ResourceCard
-              title="Source Code Repository"
-              description="Access the complete codebase for this email classification project on GitHub."
-            />
-            <ResourceCard
-              title="Dataset Documentation"
-              description="Details about the datasets used and how they were processed for this project."
-            />
-            <ResourceCard
-              title="Research Paper"
-              description="My published findings on interpretable email classification techniques."
-            />
-            <ResourceCard
-              title="Interactive Demo"
-              description="Try the classification model yourself with your own email samples."
-            />
-          </div>
-
-          <div className="mt-8 text-center">
-            <Button className="bg-emerald-600 hover:bg-emerald-700">Access Resources</Button>
-          </div>
-        </section>
       </div>
     </div>
-  )
-}
-
-function ResourceCard({ title, description }) {
-  return (
-    <Card>
-      <CardContent className="p-6">
-        <h3 className="text-lg font-semibold mb-2">{title}</h3>
-        <p className="text-slate-600">{description}</p>
-      </CardContent>
-    </Card>
   )
 }
